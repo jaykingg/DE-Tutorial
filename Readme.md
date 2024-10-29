@@ -16,8 +16,15 @@ python -m pip install --upgrade pip
 프로젝트로 이동 후
 ~~~
 python -m venv venv
+pip3 install -r requirements.txt
 ~~~
 ### 필수 패키지 설치
 ~~~
 pip3 install numpy pandas matplotlib scikit-learn
+~~~
+
+### 문제 발생 시 추가 설정
+~~~
+xcode-select --install
+python3 -m pip config set global.break-system-packages true
 ~~~
